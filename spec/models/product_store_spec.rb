@@ -1,5 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe ProductStore, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "Should validate presence of required fields" do
+    should validate_presence_of(:id)
+    should validate_presence_of(:stores_id)
+    should validate_presence_of(:products_id)
+  end
 end

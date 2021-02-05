@@ -8,5 +8,9 @@ RSpec.describe Product, type: :model do
       should validate_presence_of(:product_type)
       should validate_presence_of(:price)
     end
+
+    it "validate relations" do
+      should have_many(:stores)
+    end
   end
 end

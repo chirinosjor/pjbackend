@@ -8,5 +8,9 @@ RSpec.describe Store, type: :model do
       should validate_presence_of(:email)
       should validate_presence_of(:phone)
     end
+
+    it "validate relations" do
+      should have_many(:products)
+    end
   end
 end
