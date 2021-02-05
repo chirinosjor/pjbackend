@@ -1,4 +1,4 @@
-class ProductController < ApplicationController
+class ProductsController < ApplicationController
   rescue_from ActiveRecord::RecordInvalid do |e|
     render json: {error: e.message}, status: :unprocessable_entity
   end

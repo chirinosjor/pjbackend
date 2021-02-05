@@ -1,4 +1,4 @@
-class OrderController < ApplicationController
+class OrdersController < ApplicationController
   rescue_from ActiveRecord::RecordInvalid do |e|
     render json: {error: e.message}, status: :unprocessable_entity
   end
@@ -39,6 +39,6 @@ class OrderController < ApplicationController
   private
 
   def order_params
-    params.require(:order).permit(:id, :total)
+    params.require(:order).permit(:id, :total, :store_id, order_products_attributes: [])
   end
 end
