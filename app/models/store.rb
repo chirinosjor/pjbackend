@@ -1,5 +1,3 @@
 class Store < ApplicationRecord
-  has_many :product
-  
-  validates :name,:address,:email,:phone, presence: true
+  has_many :products
 end

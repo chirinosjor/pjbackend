@@ -3,9 +3,8 @@ class CreateStores < ActiveRecord::Migration[6.0]
     create_table :stores do |t|
       t.string :name
       t.text :address
-      t.string :email, default: 'francisco.abalan@pjchile.com'
+      t.string :email
       t.string :phone
-      t.references :product, null: false, foreign_key: true
 
       t.timestamps
     end
