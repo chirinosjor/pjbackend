@@ -1,6 +1,6 @@
 class OrderProduct < ApplicationRecord
-  belongs_to :orders
-  belongs_to :products
+  belongs_to :order
+  belongs_to :product
 
 
   validates :id, presence: true

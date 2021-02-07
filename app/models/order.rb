@@ -1,8 +1,7 @@
 class Order < ApplicationRecord
   belongs_to :store
 
-  has_many :order_products
-  has_many :products
+  has_and_belongs_to_many :products
 
   validates :total, presence: true
 end
