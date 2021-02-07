@@ -7,7 +7,7 @@ RSpec.describe Order, type: :model do
     end
 
     it "validate relations" do
-      should have_many(:products)
+      should have_and_belong_to_many(:products)
       should belong_to(:store)
     end
   end

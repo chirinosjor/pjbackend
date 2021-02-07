@@ -1,24 +1,25 @@
-# README
+# Test Técnico Backend Developer PJ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-* System dependencies
+A continuación los detalles sobre el resultado obtenido en la creación de API para ordenes.
 
-* Configuration
+  - CRUD creado para los modelos Store, Product y Order con sus respectivas relaciones
+  - Se hizo deploy de la app en heroku ( https://serene-river-70641.herokuapp.com/orders )
+  - Incluye in Health check endpoint ( https://serene-river-70641.herokuapp.com/health )
+  - Se escribieron pruebas de modelo y controlador con RSpec
+  - Se pueden probar los endpoints a través de POSTMAN
+  
+# ORDER:
 
-* Database creation
+  - URL https://serene-river-70641.herokuapp.com/orders (DEFAULT ENDPOINT)
 
-* Database initialization
+# STORE:
 
-* How to run the test suite
+  - URL https://serene-river-70641.herokuapp.com/stores
 
-* Services (job queues, cache servers, search engines, etc.)
+# PRODUCT:
 
-* Deployment instructions
-
-* ...
+  - URL https://serene-river-70641.herokuapp.com/products
